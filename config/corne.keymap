@@ -27,29 +27,29 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  F1 |  F2  |  F3  | F4 | F5 | F6 |   |  +  | - |  NUM LOCK  |  1  |  2 | 3 |
+// | F7| F8 | F9 | F10 | F11 | F12|                    | * | / | . | 4 | 5 |  6 |
+// | SHFT | INST | CTRL|  ALT | DLT  |     |           | ! | END  | 0 |7 | 8 | 9 |
+//                    | GUI |     | SPC |       | BCK |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &kp F1    &kp F2  &kp F3  &kp F4   &kp F5   &kp F6         &kp PLUS   &kp KP_MINUS   &kp LNLCK &kp N1  &kp N2 &kp N3
+   &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12                 &kp ASTRK &kp KP_SLASH &kp KP_DOT &kp N4 &kp N5 &kp N6
+   &kp LSHFT  &kp INS &kp LCTRL &kp LALT  &kp DEL  &trans       &kp EXCL &kp END &kp N0 &kp N7 &kp N8 &kp N9
+                    &kp LGUI     &trans       &kp SPACE      &kp BSPC  &trans   &kp RALT
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  ~ |    |  =  |  UP |  _  |  "|"  |                |  ^  |  @  |  (  |  )  |  &  | BKSP |
+// |     |     |  LEFT |  DOWN   | RIGHT |  FIND  |         |  %  |  $  |  [  |  ]  |  \  |     |
+// | SHFT |     |  *   |   CUT |  COPY | PASTE |             |  !  |  #  |  {  |  }  |  |  RSHIFT   |
+//                    | GUI |  | ENT |                          BACK |    | ENTER |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp  GRAVE  &trans &kp EQUAL &kp UP &kp UNDER &kp PIPE2         &kp CARET &kp AT  &kp LPAR &kp RPAR &kp AMPS &kp BSPC
+  &trans  &trans &kp LEFT  &kp DOWN &kp RIGHT &kp K_FIND               &kp PRCNT &kp DLLR &kp LBKT  &kp RBKT &kp BSLH &trans
+  &kp LSHFT  &trans &kp ASTRK  &kp K_CUT  &kp K_COPY   &kp K_PASTE            &kp EXCL &kp POUND  &kp LBRC  &kp RBRC &trans &kp RSHFT
+                    	     &kp LGUI &trans   &kp KP_ENTER                     &kp BSPC   &trans    &kp KP_ENTER
                         >;
                 };
         };
