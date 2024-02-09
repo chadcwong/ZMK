@@ -36,7 +36,7 @@
 // | SHFT | INST | CTRL|  ALT | DLT  |     |           | ! | END  | 0 |7 | 8 | 9 |
 //                    | GUI |     | SPC |       | BCK |  layer   | ALT |
                         bindings = <
-   &kp F1    &kp F2  &kp F3  &kp F4   &kp F5   &kp F6         &kp PLUS   &kp KP_MINUS   &kp LNLCK &kp N1  &kp N2 &kp N3
+   &kp F1    &kp F2  &kp F3  &kp F4   &kp F5   &kp F6         &kp PLUS   &kp MINUS   &kp LNLCK &kp N1  &kp N2 &kp N3
    &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12                 &kp ASTRK &kp KP_SLASH &kp KP_DOT &kp N4 &kp N5 &kp N6
    &kp LSHFT  &kp INS &kp LCTRL &kp LALT  &kp DEL  &trans       &kp EXCL &kp END &kp N0 &kp N7 &kp N8 &kp N9
                     &kp LGUI     &trans       &kp SPACE      &kp BSPC  &mo 3   &kp RALT
